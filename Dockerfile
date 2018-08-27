@@ -10,7 +10,8 @@ RUN apt-get install build-essential \
 
 RUN pip install jupyter \
 		numpy \
-		matplotlib
+		matplotlib \
+		wget 
 
 RUN git clone https://github.com/nmslib/hnsw \
     && cd hnsw  \
